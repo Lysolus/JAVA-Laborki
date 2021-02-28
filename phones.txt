@@ -1,0 +1,8 @@
+Manufacturer: Xiaomi
+Model: Mi 10 Pro plus X
+RAM: 16
+
+Manufacturer: Motorola
+Model: 11 Plus
+RAM: 8
+

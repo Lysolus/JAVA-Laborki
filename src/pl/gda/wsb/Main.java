@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
 	    System.out.println("Hello World!");
 
-	    Animal animal1 = new Animal("dog","Sara",5, 12.5f);
-	    Animal animal2 = new Animal("mouse", "Jerry", 10, 0.5f);
+	    Animal animal1 = new Animal("dog","Sara",5, 12);
+	    Animal animal2 = new Animal("mouse", "Jerry", 10, 4);
 
 	    Human human1 = new Human("Rick", 37, 1.85f);
 	    Human human2 = new Human("Jessica", 21, 1.45f);
@@ -21,12 +21,12 @@ public class Main {
 
 		System.out.print("--------------\n");
 
-		if (animal1.weight == animal2.weight) {
-			System.out.println(animal1.name + " and " + animal2.name + " have the same weight.");
-		}
-		else {
-			System.out.println(animal1.name + " and " + animal2.name + " have NOT the same weight.");
-		}
+//		if (animal1.weight == animal2.weight) {
+//			System.out.println(animal1.name + " and " + animal2.name + " have the same weight.");
+//		}
+//		else {
+//			System.out.println(animal1.name + " and " + animal2.name + " have NOT the same weight.");
+//		}
 
 		System.out.print("--------------\n");
 
@@ -54,5 +54,39 @@ public class Main {
 			fw.write( "Manufacturer: " + phone.manufacturer + "\nModel: " + phone.model + "\nRAM: " + phone.ram + "\n\n");
 		}
 		fw.close();
+
+		System.out.println("\n-------------------\n");
+
+		human1.pet = animal1;
+		human2.pet = animal2;
+
+		animal2.feed();
+		animal2.takeForAWalk();
+		animal2.takeForAWalk();
+		animal2.takeForAWalk();
+		animal2.feed();
+		animal2.feed();
+
+
+		animal1.feed();
+		animal1.feed();
+		animal1.takeForAWalk();
+		animal1.takeForAWalk();
+		animal1.takeForAWalk();
+		animal1.takeForAWalk();
+		animal1.takeForAWalk();
+		animal1.takeForAWalk();
+		animal1.takeForAWalk();
+		animal1.takeForAWalk();
+		animal1.takeForAWalk();
+		animal1.takeForAWalk();
+		animal1.feed();
+
+		System.out.println("\n-------------------\n");
+
+		Car car1 = new Car("blue", 3.0f, "Polonez", "FSO");
+		Car car2 = new Car("green", 1.0f, "Matiz", "Daewoo");
+		human1.car = car1;
+
 	}
 }
