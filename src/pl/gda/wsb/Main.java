@@ -1,5 +1,6 @@
 package pl.gda.wsb;
 
+import javax.sound.midi.Soundbank;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.io.FileWriter;
@@ -87,6 +88,13 @@ public class Main {
 		Car car1 = new Car("blue", 3.0f, "Polonez", "FSO");
 		Car car2 = new Car("green", 1.0f, "Matiz", "Daewoo");
 		human1.car = car1;
+
+		System.out.println(car1);
+		System.out.println(car2);
+		System.out.println(human1);
+		System.out.println(human2);
+		System.out.println(phone1);
+		System.out.println(phone2);
 
 	}
 }

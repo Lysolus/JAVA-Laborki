@@ -12,4 +12,15 @@ public class Human {
         this.age = age;
         this.height = height;
     }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", height=" + height +
+                ", pet=" + pet +
+                ", car=" + car +
+                '}';
+    }
 }

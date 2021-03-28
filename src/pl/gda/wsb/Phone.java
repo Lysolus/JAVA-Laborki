@@ -10,4 +10,13 @@ public class Phone {
         this.model = model;
         this.ram = ram;
     }
+
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "manufacturer='" + manufacturer + '\'' +
+                ", model='" + model + '\'' +
+                ", ram=" + ram +
+                '}';
+    }
 }
